@@ -24,7 +24,7 @@ jobs:
         run: |
           xcodebuild test \
             -scheme "Reto 3 - Sabias Que" \
-            -destination "platform=iOS Simulator,name=iPhone 15" \
+            -destination "platform=iOS Simulator,name=iPhone 17" \
             -resultBundlePath TestResults.xcresult
 
       - name: Extraer imágenes PNG del reporte .xcresult
