@@ -10,6 +10,13 @@
 
 @interface ViewController : UIViewController
 
+@property(weak, nonatomic) IBOutlet UILabel *categoryTitleLabel;
+@property(weak, nonatomic) IBOutlet UILabel *factTitleLabel;
+@property(weak, nonatomic) IBOutlet UITextView *factTextView;
+
+- (IBAction)selectCategory1:(id)sender;
+- (IBAction)selectCategory2:(id)sender;
+- (IBAction)selectCategory3:(id)sender;
+- (IBAction)nextFactTapped:(id)sender;
 
 @end
-

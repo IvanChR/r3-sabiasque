@@ -1,24 +1,190 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0"
+    toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none"
+    useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES"
+    initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12" />
+        <capability name="Safe area layout guides" minToolsVersion="9.0" />
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0" />
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--View
+        Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController"
+                    sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667" />
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES"
+                            heightSizable="YES" />
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left"
+                                horizontalHuggingPriority="251" verticalHuggingPriority="251"
+                                fixedFrame="YES" text="¿Sabías qué?" textAlignment="center"
+                                lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines"
+                                adjustsFontSizeToFit="NO"
+                                translatesAutoresizingMaskIntoConstraints="NO" id="titleApp">
+                                <rect key="frame" x="67" y="40" width="240" height="35" />
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"
+                                    flexibleMaxY="YES" />
+                                <fontDescription key="fontDescription" type="boldSystem"
+                                    pointSize="24" />
+                                <nil key="textColor" />
+                                <nil key="highlightedColor" />
+                            </label>
+
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left"
+                                horizontalHuggingPriority="251" verticalHuggingPriority="251"
+                                fixedFrame="YES" text="Categoría" textAlignment="center"
+                                lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines"
+                                adjustsFontSizeToFit="NO"
+                                translatesAutoresizingMaskIntoConstraints="NO" id="catLabel">
+                                <rect key="frame" x="37" y="90" width="300" height="25" />
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"
+                                    flexibleMaxY="YES" />
+                                <fontDescription key="fontDescription" type="system"
+                                    weight="semibold" pointSize="16" />
+                                <color key="textColor" red="0.20000000300000001"
+                                    green="0.20000000300000001" blue="0.20000000300000001" alpha="1"
+                                    colorSpace="custom" customColorSpace="sRGB" />
+                                <nil key="highlightedColor" />
+                            </label>
+
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left"
+                                horizontalHuggingPriority="251" verticalHuggingPriority="251"
+                                fixedFrame="YES" text="Título del dato" textAlignment="center"
+                                lineBreakMode="tailTruncation" numberOfLines="2"
+                                baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO"
+                                translatesAutoresizingMaskIntoConstraints="NO" id="factTitle">
+                                <rect key="frame" x="37" y="130" width="300" height="50" />
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"
+                                    flexibleMaxY="YES" />
+                                <fontDescription key="fontDescription" type="boldSystem"
+                                    pointSize="18" />
+                                <nil key="textColor" />
+                                <nil key="highlightedColor" />
+                            </label>
+
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES"
+                                contentMode="scaleToFill" fixedFrame="YES" editable="NO"
+                                text="Selecciona una categoría o presiona 'Otro dato' para comenzar."
+                                textAlignment="center"
+                                translatesAutoresizingMaskIntoConstraints="NO" id="factText">
+                                <rect key="frame" x="37" y="190" width="300" height="120" />
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"
+                                    flexibleMaxY="YES" />
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom"
+                                    customColorSpace="genericGamma22GrayColorSpace" />
+                                <fontDescription key="fontDescription" type="system" pointSize="16" />
+                                <textInputTraits key="textInputTraits"
+                                    autocapitalizationType="sentences" />
+                            </textView>
+
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES"
+                                contentHorizontalAlignment="center"
+                                contentVerticalAlignment="center" buttonType="roundedRect"
+                                lineBreakMode="middleTruncation"
+                                translatesAutoresizingMaskIntoConstraints="NO" id="btnCat1">
+                                <rect key="frame" x="67" y="340" width="240" height="45" />
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"
+                                    flexibleMaxY="YES" />
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001"
+                                    blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                                <fontDescription key="fontDescription" type="boldSystem"
+                                    pointSize="15" />
+                                <state key="normal" title="Categoría 1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom"
+                                        customColorSpace="genericGamma22GrayColorSpace" />
+                                </state>
+                                <connections>
+                                    <action selector="selectCategory1:" destination="BYZ-38-t0r"
+                                        eventType="touchUpInside" id="ac1" />
+                                </connections>
+                            </button>
+
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES"
+                                contentHorizontalAlignment="center"
+                                contentVerticalAlignment="center" buttonType="roundedRect"
+                                lineBreakMode="middleTruncation"
+                                translatesAutoresizingMaskIntoConstraints="NO" id="btnCat2">
+                                <rect key="frame" x="67" y="400" width="240" height="45" />
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"
+                                    flexibleMaxY="YES" />
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001"
+                                    blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                                <fontDescription key="fontDescription" type="boldSystem"
+                                    pointSize="15" />
+                                <state key="normal" title="Categoría 2">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom"
+                                        customColorSpace="genericGamma22GrayColorSpace" />
+                                </state>
+                                <connections>
+                                    <action selector="selectCategory2:" destination="BYZ-38-t0r"
+                                        eventType="touchUpInside" id="ac2" />
+                                </connections>
+                            </button>
+
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES"
+                                contentHorizontalAlignment="center"
+                                contentVerticalAlignment="center" buttonType="roundedRect"
+                                lineBreakMode="middleTruncation"
+                                translatesAutoresizingMaskIntoConstraints="NO" id="btnCat3">
+                                <rect key="frame" x="67" y="460" width="240" height="45" />
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"
+                                    flexibleMaxY="YES" />
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001"
+                                    blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                                <fontDescription key="fontDescription" type="boldSystem"
+                                    pointSize="15" />
+                                <state key="normal" title="Categoría 3">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom"
+                                        customColorSpace="genericGamma22GrayColorSpace" />
+                                </state>
+                                <connections>
+                                    <action selector="selectCategory3:" destination="BYZ-38-t0r"
+                                        eventType="touchUpInside" id="ac3" />
+                                </connections>
+                            </button>
+
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES"
+                                contentHorizontalAlignment="center"
+                                contentVerticalAlignment="center" buttonType="roundedRect"
+                                lineBreakMode="middleTruncation"
+                                translatesAutoresizingMaskIntoConstraints="NO" id="btnNext">
+                                <rect key="frame" x="67" y="530" width="240" height="45" />
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"
+                                    flexibleMaxY="YES" />
+                                <color key="backgroundColor" red="0.20000000300000001"
+                                    green="0.70000000000000007" blue="0.30000000000000004" alpha="1"
+                                    colorSpace="custom" customColorSpace="sRGB" />
+                                <fontDescription key="fontDescription" type="boldSystem"
+                                    pointSize="15" />
+                                <state key="normal" title="Otro dato">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom"
+                                        customColorSpace="genericGamma22GrayColorSpace" />
+                                </state>
+                                <connections>
+                                    <action selector="nextFactTapped:" destination="BYZ-38-t0r"
+                                        eventType="touchUpInside" id="ac4" />
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor"
+                            cocoaTouchSystemColor="groupTableViewBackgroundColor" />
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY" />
                     </view>
+                    <connections>
+                        <outlet property="categoryTitleLabel" destination="catLabel" id="out1" />
+                        <outlet property="factTextView" destination="factText" id="out3" />
+                        <outlet property="factTitleLabel" destination="factTitle" id="out2" />
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr"
+                    sceneMemberID="firstResponder" />
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021" />
         </scene>
     </scenes>
 </document>
